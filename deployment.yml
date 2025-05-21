@@ -27,7 +27,6 @@ spec:
   selector:
     app: react-nginx
   ports:
-  - port: 80
-    targetPort: 80
-  # Change this from 30007 to 30008 or another free port between 30000-32767
-
+    - port: 80
+      targetPort: 80
+      nodePort: 30008  # Use a free port between 30000-32767
